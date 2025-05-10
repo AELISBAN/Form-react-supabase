@@ -1,13 +1,14 @@
 "use client";
 import React from "react";
-import Todo from "./Todo.type";
+import Todotype from "./Todo.type";
+
 
 interface Props {
   id: number;
   isCompleted: boolean;
   title: string;
   description: string;
-  onEdit?: (editingTodo: Todo) => void;
+  onEdit?: (editingTodo: Todotype) => void;
   onDelete?: () => void;
   onChange?: (id: number, newValue: boolean) => void;
 }
